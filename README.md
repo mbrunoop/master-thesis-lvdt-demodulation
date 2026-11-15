@@ -1,2 +1,3 @@
 # master-thesis-lvdt-demodulation
-Master Thesis RepositoryMODEL-BASED IMPLEMENTATION AND PERFORMANCE EVALUATION OF DIGITAL RATIOMETRIC DEMODULATION ALGORITHM FOR LVDT SENSORS IN AERONAUTICAL APPLICATIONS
+Master's Thesis Repository
+PEREIRA, Mariana Bruno de Oliveira. Model-Based Implementation and Performance Evaluation of Digital Ratiometric Demodulation Algorithm for LVDT Sensors in Aeronautical Applications. 2026
