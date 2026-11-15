@@ -45,6 +45,12 @@ volatile uint8_t runModel_step1 = 0;
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
+  /* Write your local variable definition here */
+	uint32_t start_time;
+	uint32_t end_time;
+	uint32_t elapsed_cycles;
+	float execution_time_us;
+
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
@@ -60,7 +66,18 @@ int main(void)
   while(1){
 	  if (runModel_step1 == 1){
 		  runModel_step1 = 0;
+
+		  // Configuração do canal 1 para medir tempo de execução
+		  PIT->CHANNEL[1].LDVAL = 0xFFFFFFFF;
+		  PIT->CHANNEL[1].TCTRL = 1;
+		  start_time = 0xFFFFFFFF - PIT->CHANNEL[1].CVAL;
+
 		  peak_variant_step1();
+
+		  // Cálculo do tempo de processamento
+		  end_time = 0xFFFFFFFF - PIT->CHANNEL[1].CVAL;
+		  elapsed_cycles = end_time - start_time;
+		  execution_time_us = (float)elapsed_cycles / 24.0; // Bus Clock 24 MHz
 	  }
   }
   /* end of user code */

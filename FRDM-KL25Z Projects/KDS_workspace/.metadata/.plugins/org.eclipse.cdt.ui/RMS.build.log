@@ -1,11 +1,11 @@
-03:52:36 **** Incremental Build of configuration Debug for project RMS ****
+00:16:08 **** Incremental Build of configuration Debug for project RMS ****
 make all 
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley "RMS.elf"
    text	   data	    bss	    dec	    hex	filename
-  23524	    124	   7072	  30720	   7800	RMS.elf
+  24428	    124	   7072	  31624	   7b88	RMS.elf
 'Finished building: RMS.siz'
 ' '
 
-03:52:37 Build Finished (took 633ms)
+00:16:09 Build Finished (took 650ms)
 
