@@ -1,0 +1,7 @@
+-I"C:/Users/mbrun/OneDrive/Documentos/Mestrado/2 - Model/LVDT Digital Demodulation"
+-I"C:/Users/mbrun/OneDrive/Documentos/Mestrado/2 - Model/LVDT Digital Demodulation/rms_variant_ert_rtw"
+-I"C:/Program Files/MATLAB/R2025a/extern/include"
+-I"C:/Program Files/MATLAB/R2025a/simulink/include"
+-I"C:/Program Files/MATLAB/R2025a/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2025a/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2025a/rtw/c/ert"

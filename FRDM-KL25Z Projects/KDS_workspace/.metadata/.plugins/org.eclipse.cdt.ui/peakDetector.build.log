@@ -1,0 +1,11 @@
+03:14:28 **** Incremental Build of configuration Debug for project peakDetector ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "peakDetector.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21124	    120	   7072	  28316	   6e9c	peakDetector.elf
+'Finished building: peakDetector.siz'
+' '
+
+03:14:29 Build Finished (took 711ms)
+

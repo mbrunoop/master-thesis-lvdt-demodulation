@@ -1,0 +1,13 @@
+This file is manifest for code generated from model 'average_variant'.
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant.c
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant_data.c
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\rtmodel.c
+C:\Program Files\MATLAB\R2025a\rtw\c\src\common\rt_main.c
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant.h
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant_private.h
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant_types.h
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\rtmodel.h
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\rtwtypes.h
+C:\Program Files\MATLAB\R2025a\rtw\c\src\ext_mode\common\ext_work.h
+C:\Program Files\MATLAB\R2025a\rtw\c\src\rt_logging.h
+C:\Users\mbrun\OneDrive\Documentos\Mestrado\2 - Model\LVDT Digital Demodulation\average_variant_ert_rtw\average_variant_manifest.txt

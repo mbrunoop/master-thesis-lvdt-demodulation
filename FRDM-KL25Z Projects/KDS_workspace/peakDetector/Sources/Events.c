@@ -1,0 +1,75 @@
+/* ###################################################################
+**     Filename    : Events.c
+**     Project     : peakDetector
+**     Processor   : MKL25Z128VLK4
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2026-09-01, 23:40, # CodeGen: 0
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file Events.c
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup Events_module Events module documentation
+**  @{
+*/         
+/* MODULE Events */
+
+#include "Cpu.h"
+#include "Events.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+
+/* User includes (#include below this line is not maintained by Processor Expert) */
+#include "peak_variant.h"
+extern volatile uint8_t runModel_step1;
+
+void PIT_IRQHandler(void)
+{
+  /* Clear interrupt flag.*/
+  PIT_HAL_ClearIntFlag(g_pitBase[FSL_PITTIMER1], FSL_PITTIMER1_CHANNEL);
+  /* Write your code here ... */
+  peak_variant_step0();
+
+  if (rtmStepTask(peak_variant_M, 1)) {
+          runModel_step1 = 1; // Levanta a flag para o while(1) rodar o step1()
+      }
+
+  peak_variant_M->Timing.TaskCounters.TID[1]++;
+      if (peak_variant_M->Timing.TaskCounters.TID[1] > 331) {
+          peak_variant_M->Timing.TaskCounters.TID[1] = 0;
+      }
+}
+
+/* END Events */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif 
+
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/
